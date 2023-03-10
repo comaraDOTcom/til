@@ -31,8 +31,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       },
       {
         "id": "71e757f80e7bd8db",
@@ -44,7 +43,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "dbt/using-jinja-for-combinations.md",
                 "mode": "source",
                 "source": false
               }
@@ -177,7 +176,7 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "e4ad4ee66db1e09d",
+  "active": "b2a0fdb9efb28043",
   "lastOpenFiles": [
     "dbt/using-jinja-for-combinations.md",
     "README.md",
