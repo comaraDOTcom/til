@@ -13,7 +13,38 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "pytest-fixtures-and-coverage.md",
+                "file": "README.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "e737d8643de9aa62",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "dbt/using-jinja-for-combinations.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ],
+        "currentTab": 1
+      },
+      {
+        "id": "71e757f80e7bd8db",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e4ad4ee66db1e09d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "README.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +116,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "pytest-fixtures-and-coverage.md",
+                "file": "README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +133,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "pytest-fixtures-and-coverage.md",
+                "file": "README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +156,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "pytest-fixtures-and-coverage.md"
+                "file": "README.md"
               }
             }
           }
@@ -146,6 +177,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "b2a0fdb9efb28043",
-  "lastOpenFiles": []
+  "active": "e4ad4ee66db1e09d",
+  "lastOpenFiles": [
+    "dbt/using-jinja-for-combinations.md",
+    "README.md",
+    "dbt",
+    "python/pytest-fixtures-and-coverage.md",
+    "python"
+  ]
 }
