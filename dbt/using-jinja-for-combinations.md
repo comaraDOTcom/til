@@ -8,7 +8,7 @@ To get the list of cities, I'll  run a query in dbt using jinja. I have a table 
 ```sql
 {% set get_cities_query -%}
     select distinct
-        related_action
+        cities
     from {{ ref('cities') }}
 {%- endset -%}
 
@@ -19,8 +19,8 @@ To get the list of cities, I'll  run a query in dbt using jinja. I have a table 
 To get the overlap for each city with each other city, construct a dictionary with a key for each city and the values for that key as the list of all the other cities.
 ```sql
 {% set cities_dict = {} %}
-{% for action in distinct_actions %}
-    {% do cities_dict.update( { action : (distinct_cities | reject("equalto", action) | list)}) %}
+{% for city in distinct_cities %}
+    {% do cities_dict.update( { city : (distinct_cities | reject("equalto", city | list)}) %}
 {% endfor %}
 ```
 
@@ -30,7 +30,7 @@ Then we'll create a combination of every city's overlap with every other city. W
 with
 {% for primary_city, secondary_city_list in city_list.items() %}
     {% for secondary_city in secondary_city_list %}
-    {{ primary_key }}_{{ secondary_key}}_overlap_table as (
+    {{ primary_city }}_{{ secondary_city }}_overlap_table as (
         {{ overlap_stats(primary_table=primary_city, secondary_table=secondary_key, pimary_key=column_name) }}
     ),
         {% endfor %}
@@ -40,9 +40,9 @@ with
 Then to get the full overlap we can union them all up.
 ```sql
 cities__overlap as (
-    {% for primary_key, secondary_actions_list in action_list.items() %}
-        {% for secondary_key in secondary_actions_list %}
-        select * from {{ primary_key }}_{{ secondary_key}}_overlap_table
+	{% for primary_city, secondary_city_list in city_list.items() %}
+	    {% for secondary_city in secondary_city_list %}
+        select * from {{ primary_city }}_{{ secondary_city }}_overlap_table
         {{ 'union all' if not loop.last}}
         {% endfor %}
         {{ 'union all' if not loop.last}}
