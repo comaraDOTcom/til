@@ -11,3 +11,6 @@ today i learned logs
 
 ### git
 - [remove-1-commit-from-remote](git/remove-1-commit-from-remote.md) (2022-03-10)
+
+### terraform
+- [ecr-module](terraform/ecr-repo.md) (2022-03-27)
