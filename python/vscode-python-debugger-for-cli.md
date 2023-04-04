@@ -56,9 +56,17 @@ setup(
 )
 ```
 
+
 Calling vscode to debug the `calculate_strokes` is currently painful via the `launch.json`. It can only call modules not cli tools.
 
-To get this to work, we add the following to the module 
+To get this to work, we append the following to the module file with the command you are debugging.
+
+```json
+if __name__ == '__main__':
+	calc_operation(["--operator", "add", "--data", "data.json""])
+```
+
+And updated the `launch.json`: Note the args are not needed.
 ```json
 "version": "0.2.0",
 
