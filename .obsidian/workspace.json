@@ -32,6 +32,18 @@
             }
           },
           {
+            "id": "a98fbaf2754a0872",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "README.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
             "id": "e4ad4ee66db1e09d",
             "type": "leaf",
             "state": {
@@ -92,7 +104,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -158,7 +170,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "python/vscode-python-debugger-for-cli.md",
+                "file": "README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -175,7 +187,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "python/vscode-python-debugger-for-cli.md",
+                "file": "README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -198,7 +210,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "python/vscode-python-debugger-for-cli.md"
+                "file": "README.md"
               }
             }
           }
@@ -219,10 +231,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "4c35be8856914e71",
+  "active": "a98fbaf2754a0872",
   "lastOpenFiles": [
-    "README.md",
+    "python/ga4-oauth-process.md",
     "python/vscode-python-debugger-for-cli.md",
+    "README.md",
     "python/pytest-fixtures-and-coverage.md",
     "dbt/using-jinja-for-combinations.md",
     "terraform/ecr-repo.md",
