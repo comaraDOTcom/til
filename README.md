@@ -14,6 +14,7 @@ today i learned logs
 
 ### git
 - [remove-1-commit-from-remote](git/remove-1-commit-from-remote.md) (2022-03-10)
+- [undo-a-rebase](git/undo-a-rebase.md)(2023-07-14)
 
 ### terraform
 - [ecr-module](terraform/ecr-repo.md) (2022-03-27) 
